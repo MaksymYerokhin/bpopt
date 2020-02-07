@@ -24,7 +24,7 @@ Described in https://github.com/AdaptiveBProcess/Simod
 To use these algorithms, you have to first setup bpopt.py.
 Change the parameters of the following command:
 `hill_pareto(50, 2, tabu=True, trace_file_name="corrected_consulta_trace_tabu.txt", stats_file_name="corrected_consulta_stats_tabu.txt")`
-The first paraneters is the maximum number of iterations, second is the frequency of logging of the measures (from 1 to max. number of iterations),
+The first paraneters is the maximum number of iterations, second is the frequency of logging of the measures (from 1 to max. number of iterations), third is a switch between Hill Climbing and Tabu Search modes,
 then goes the name of statistics file and trace file (if you want to see more insight).
 The input model is set in hill_climbing_pareto.py
 
