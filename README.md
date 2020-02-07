@@ -23,15 +23,15 @@ Described in https://github.com/AdaptiveBProcess/Simod
 ***Hill Climbing and Tabu Search:***
 To use these algorithms, you have to first setup bpopt.py.
 Change the parameters of the following command:
-hill_pareto(50, 2, tabu=True, trace_file_name="corrected_consulta_trace_tabu.txt", stats_file_name="corrected_consulta_stats_tabu.txt")
+`hill_pareto(50, 2, tabu=True, trace_file_name="corrected_consulta_trace_tabu.txt", stats_file_name="corrected_consulta_stats_tabu.txt")`
 The first paraneters is the maximum number of iterations, second is the frequency of logging of the measures (from 1 to max. number of iterations),
 then goes the name of statistics file and trace file (if you want to see more insight).
 The input model is set in hill_climbing_pareto.py
 
 ***NSGA-2:***
 To run NSGA-2 you have to execute nsga2.py script and have the simulation model as CopiedModel.bpmn in the same directory.
-You have to edit MyProblem class and set the number of BPMN pools in n_var, number of outcomes in n_obj and resource bounds
-in xl and xu.
+You have to edit MyProblem class and set the number of BPMN pools in `n_var`, number of outcomes in `n_obj` and resource bounds
+in `xl` and `xu`.
 
 ### Results
 Each script produces the statistics file and logging information in trace file.
