@@ -17,8 +17,20 @@ If you decide to start with BPMN, you have to ensure that it contains the availa
 
 ### Execution steps
 
+To setup the repositpory use command:
+`git clone https://github.com/MaksymYerokhin/bpopt`
+Then from bpopt directory run command:
+`git clone https://github.com/AdaptiveBProcess/Simod`
+
 ***Simulation model mining:*** 
-Described in https://github.com/AdaptiveBProcess/Simod
+This step is optional. If you have an event log, then consider running thhe Simod tool first.
+If you have a simulation model in BPMN format, you can skip and go to the analysis step.
+
+Simulation model mining is described in https://github.com/AdaptiveBProcess/Simod
+
+
+The prepared simulation model should be placed in root directory - bpopt.
+Then you can run the analysis choosing from the following approaches.
 
 ***Hill Climbing and Tabu Search:***
 To use these algorithms, you have to first setup bpopt.py.
